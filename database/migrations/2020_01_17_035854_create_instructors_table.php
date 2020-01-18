@@ -16,7 +16,7 @@ class CreateInstructorsTable extends Migration
         Schema::create('instructors', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            // $table->timestamps();
+            $table->timestamps();
         });
     }
 

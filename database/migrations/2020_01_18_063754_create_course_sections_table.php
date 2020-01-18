@@ -13,11 +13,14 @@ class CreateCourseSectionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('course__sections', function (Blueprint $table) {
+        Schema::create('course_sections', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('course_id');
-            $table->integer('section_id');
-            // $table->timestamps();
+            $table->integer('course_id')->unsigned();
+            $table->foreign('course_id')->references('id')->on('courses');
+            
+            $table->integer('section_id')->unsigned();
+            $table->foreign('section_id')->references('id')->on('sections');
+            $table->timestamps();
         });
     }
 
@@ -28,6 +31,6 @@ class CreateCourseSectionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('course__sections');
+        Schema::dropIfExists('course_sections');
     }
 }

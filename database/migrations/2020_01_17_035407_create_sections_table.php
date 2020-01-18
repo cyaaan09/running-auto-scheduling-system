@@ -17,7 +17,7 @@ class CreateSectionsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->integer('max_num_of_students');
-            // $table->timestamps();
+            $table->timestamps();
         });
     }
 

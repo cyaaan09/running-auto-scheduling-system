@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Meeting_Time extends Model
+class CourseSection extends Model
 {
     //
 }
