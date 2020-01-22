@@ -15,15 +15,21 @@ class TypesTableSeeder extends Seeder
     {
         DB::table('types')->insert([
         	[
-        		'name' => 'LAB'
+        		'name' => 'LAB',
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
         		'name' => 'LEC',
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
         		'name' => 'FIELD',
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
         	]
 
         ]);
