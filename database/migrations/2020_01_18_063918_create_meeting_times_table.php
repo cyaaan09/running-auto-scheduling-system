@@ -18,7 +18,7 @@ class CreateMeetingTimesTable extends Migration
             $table->string('day');
             $table->string('start');
             $table->string('end');
-            $table->integer('duration');
+            $table->float('duration');
             $table->timestamps();
         });
     }

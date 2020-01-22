@@ -12,6 +12,202 @@ class RoomsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('rooms')->insert([
+        	[
+        		'seating_capacity' => 25,
+        		'type_id' => 1,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 45,
+        		'type_id' => 1,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 35,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 3,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 1,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 1,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 1,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 1,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 1,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 1,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 2,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 1,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+
+        	[
+        		'seating_capacity' => 50,
+        		'type_id' => 1,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now()
+        	],
+        ]);
     }
 }

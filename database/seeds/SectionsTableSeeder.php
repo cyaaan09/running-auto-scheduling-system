@@ -30,7 +30,7 @@ class SectionsTableSeeder extends Seeder
 
 
 
-        ])
+        ]);
         	
     }
 }
