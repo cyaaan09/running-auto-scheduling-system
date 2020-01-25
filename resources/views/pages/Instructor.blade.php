@@ -1,6 +1,16 @@
 @extends('index')
 
 @section('content')
+<style type="text/css">
+.my-custom-scrollbar {
+position: relative;
+height: 500px;
+overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
+</style>
 <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -25,32 +35,36 @@
                         </div>
                       </div>
                       <!-- /.card-header -->
-                      <div class="card-body p-0">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th>ID #</th>
-                              <th>Name</th>
-                              <th>Rank</th>
-                              <th>Expertise</th>
-                              <th>Action</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>19-202</td>
-                              <td>Update software</td>
-                              <td><span class="badge bg-danger">1</span></td>
-                              <td><span class="badge bg-danger">55%</span></td>
-                              <td>
-                                  <a href="#" class="btn btn-block btn-info btn-xs" data-toggle="modal" data-target="#Details">Details</a>
-                                </a>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+                      <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                        <div class="card-body p-0">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>ID #</th>
+                                <th>Name</th>
+                                <th>created_at</th>
+                                <th>updated_at</th>
+                              </tr>
+                            </thead>
+                             @foreach($instructors as $instructor)
+                            <tbody>
+                              <tr>
+                               
+                                <td>{{ $instructor->id }}</td>
+                                <td>{{ $instructor->name }}</td>
+                                <td>{{ $instructor->created_at }}</td>
+                                <td>{{ $instructor->updated_at }}</td>
+                                <td>
+                                    <a href="#" class="btn btn-block btn-info btn-xs" data-toggle="modal" data-target="#Details">Details</a>
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                            @endforeach
+                          </table>
+                        </div>
                       <!-- /.card-body -->
+                      </div>
                 </div>
             </div>
         </div>

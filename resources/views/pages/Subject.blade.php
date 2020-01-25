@@ -72,19 +72,21 @@
                                 <tr>
                                   <th>ID #</th>
                                   <th>Subject Name</th>
-                                  <th>Subject Name</th>
-                                  <th>Description </th>
+                                  <th>Created_at</th>
+                                  <th>Updated_at</th>
                                 </tr>
                               </thead>
+                              @foreach($subjects as $subject)
                               <tbody>
                                 <tr>
-                                  <td>19-202</td>
-                                  <td>IT</td>
-                                  <td>IT</td>
-                                  <td>IT</td>
-                                  <td>Delete</td>
+                                  <td>{{ $subject->id }}</td>
+                                  <td>{{ $subject->name }}</td>
+                                  <td>{{ $subject->created_at }}</td>
+                                  <td>{{ $subject->updated_at }}</td>
+                                  <!-- <td>Delete</td> -->
                                 </tr>
                               </tbody>
+                              @endforeach
                             </table>
                           </div>
                           <!-- /.card-body -->

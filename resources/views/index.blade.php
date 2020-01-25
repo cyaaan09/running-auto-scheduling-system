@@ -137,9 +137,9 @@
 
     <!-- Main content -->
     <section class="content">
-      @include('messages.Success')
+ <!--      @include('messages.Success')
 
-      @include('messages.errors')
+      @include('messages.errors') -->
 
       @yield('content')
 

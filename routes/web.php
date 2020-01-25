@@ -20,16 +20,13 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/instructor', 'InstructorController@index')->name('instructor');
-
+Route::POST('/instructor', 'InstructorController@add')->name('instructor.add');
 
 Route::get('/course', 'CourseController@index')->name('course');
 
-
 Route::get('/subject', 'SubjectController@index')->name('subject');
 
-
 Route::get('/schedule', 'ScheduleController@index')->name('schedule');
-
 
 Route::get('/room', 'RoomController@index')->name('room');
 

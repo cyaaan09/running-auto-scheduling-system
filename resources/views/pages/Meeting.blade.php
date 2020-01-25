@@ -76,22 +76,24 @@
                               <thead>
                                 <tr>
                                   <th>ID #</th>
-                                  <th>Date</th>
-                                  <th>Time</th>
-                                  <th>Section </th>
-                                  <th>Max of Student</th>
+                                  <th>Day</th>
+                                  <th>Start</th>
+                                  <th>End </th>
+                                  <th>Duration</th>
                                 </tr>
                               </thead>
+                              @foreach($meeting_times as $meeting_time)
                               <tbody>
                                 <tr>
-                                  <td>19-202</td>
-                                  <td>IT</td>
-                                  <td>IT</td>
-                                  <td>IT</td>
-                                  <td>IT</td>
-                                  <td style="width: 12%;">Delete</td>
+                                  <td>{{ $meeting_time->id }}</td>
+                                  <td>{{ $meeting_time->day }}</td>
+                                  <td>{{ $meeting_time->start }}</td>
+                                  <td>{{ $meeting_time->end }}</td>
+                                  <td>{{ $meeting_time->duration }}</td>
+                                 <!--  <td style="width: 12%;">Delete</td> -->
                                 </tr>
                               </tbody>
+                              @endforeach
                             </table>
                           </div>
                           <!-- /.card-body -->

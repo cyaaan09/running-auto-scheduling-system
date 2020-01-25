@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Subject;
 
 class SubjectController extends Controller
 {
@@ -23,7 +24,8 @@ class SubjectController extends Controller
      */
     public function index()
     {
-        return view('pages.Subject');
+        $subjects = subject::all();
+        return view('pages.subject')->with("subjects", $subjects);
     }
     public function add()
     {

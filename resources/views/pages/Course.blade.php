@@ -12,8 +12,8 @@
       </div><!-- /.container-fluid -->
     </section>
     <div class="row">
-      <div class="col-sm-3"></div>
-      <div class="col-sm-6">
+      <!-- <div class="col-sm-3"></div> -->
+      <div class="col-sm-4">
         <div class="card card-warning">
               <div class="card-header">
                 <h3 class="card-title">Data Course</h3>
@@ -38,5 +38,46 @@
               <!-- /.card-body -->
             </div>
       </div>
-    </div>
+   
+
+        <div class="col-sm-8">
+         <div class="card">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                          <div class="card-header">
+                            <h3 class="card-title">List</h3>
+                          </div>
+                          <!-- /.card-header -->
+                          <div class="card-body p-0">
+                            <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>ID #</th>
+                                    <th>Course Name</th>
+                                    <th>Created_at</th>
+                                    <th>Updated_at</th>
+                                  </tr>
+                                </thead>
+                                @foreach($courses as $course)
+                                <tbody>
+                                  <tr>
+                                    <td>{{ $course->id }}</td>
+                                    <td>{{ $course->name }}</td>
+                                    <td>{{ $course->created_at }}</td>
+                                    <td>{{ $course->updated_at }}</td>
+                                  </tr>
+                                </tbody>
+                                @endforeach  
+                              </table>
+                            </div>
+                          </div>
+                          <!-- /.card-body -->
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
 @endsection

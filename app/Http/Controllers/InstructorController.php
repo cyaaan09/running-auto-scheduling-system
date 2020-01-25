@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Instructor;
 
 class InstructorController extends Controller
 {
@@ -23,11 +24,15 @@ class InstructorController extends Controller
      */
     public function index()
     {
-        return view('pages.Instructor');
+        $instructors = Instructor::all();
+        return view('pages.instructor')->with("instructors", $instructors);
     }
-    public function add()
+    public function add(Request $request)
     {
-        return view('pages.Instructor');
+        $instructor = new Instructor;
+        $instructor->name = $request->input('instructor_name');
+        $instructor->save();
+        return redirect('/instructor');
     }
 
     public function delete()

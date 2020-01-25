@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\MeetingTime;
 class MeetingController extends Controller
 {
          /**
@@ -23,7 +23,8 @@ class MeetingController extends Controller
      */
     public function index()
     {
-        return view('pages.Meeting');
+        $meeting_times = MeetingTime::all();
+        return view('pages.Meeting')->with("meeting_times", $meeting_times);
     }
     public function add()
     {

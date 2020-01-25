@@ -10,23 +10,25 @@
         </button>
       </div>
       <div class="modal-body">
-        <form>
+        <form action="/instructor" method="POST">
+          {{csrf_field()}}
             <label for="recipient-name" class="col-form-label">Name:</label>
-            <input type="text" class="form-control" id="recipient-name">
-            <label for="recipient-name" class="col-form-label">Rank:</label>
+            <input type="text" class="form-control" id="recipient-name" name="instructor_name">
+            <!-- <label for="recipient-name" class="col-form-label">Rank:</label>
             <input type="text" class="form-control" id="recipient-name">
             <label for="recipient-name" class="col-form-label">Expertise:</label>
             <input type="text" class="form-control" id="recipient-name">
             <label for="recipient-name" class="col-form-label">Max Units:</label>
             <input type="text" class="form-control" id="recipient-name">
             <img src="">
-            <button type="button" class="btn btn-primary">UPLOAD</button>
+            <button type="button" class="btn btn-primary">UPLOAD</button> -->
+             <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">ADD</button>
+      </div>
         </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">ADD</button>
-      </div>
+     
     </div>
   </div>
 </div>
