@@ -22,19 +22,27 @@ class SubjectController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function get()
     {
         $subjects = subject::all();
         return view('pages.subject')->with("subjects", $subjects);
     }
-    public function add()
+    public function new()
     {
         return view('pages.Subject');
     }
 
-    public function delete()
+    public function show()
     {
         return view('pages.Subject');
+    }
+
+    public function post(Request $request)
+    {
+        $subject = new Subject;
+        $subject->name = $request->input('subject_name');
+        $subject->save();
+        return redirect('/subject');
     }
 
     public function edit()
@@ -42,8 +50,14 @@ class SubjectController extends Controller
         return view('pages.Subject');
     }
 
-    public function update()
+    public function put()
     {
-        return view('pages.Subject');
+        return view('pages.Room');
+    }
+
+    public function delete($id)
+    {
+        Subject::where('id',$id)->delete();
+        return redirect('/subject');
     }
 }

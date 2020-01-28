@@ -21,19 +21,31 @@ class MeetingController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function get()
     {
         $meeting_times = MeetingTime::all();
         return view('pages.Meeting')->with("meeting_times", $meeting_times);
     }
-    public function add()
+    public function new()
     {
         return view('pages.Meeting');
     }
 
-    public function delete()
+    public function show($id)
     {
-        return view('pages.Meeting');
+        MeetingTime::where('id',$id)->delete();
+        return redirect('/meetingtime');
+    }
+
+    public function post(Request $request)
+    {
+        $meeting = new MeetingTime;
+        $meeting->day = $request->input('day');
+        $meeting->start = $request->input('start');
+        $meeting->end = $request->input('end');
+        $meeting->duration = $request->input('duration');
+        $meeting->save();
+        return redirect('/meetingtime');
     }
 
     public function edit()
@@ -41,8 +53,14 @@ class MeetingController extends Controller
         return view('pages.Meeting');
     }
 
-    public function update()
+    public function put()
     {
         return view('pages.Meeting');
+    }
+
+    public function delete($id)
+    {
+        MeetingTime::where('id',$id)->delete();
+        return redirect('/meetingtime');
     }
 }

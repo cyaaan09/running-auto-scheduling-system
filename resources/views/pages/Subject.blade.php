@@ -19,34 +19,35 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-                <form role="form">
+                <form role="form" action="/subject" method="POST">
+                  {{csrf_field()}}
                   <div class="row">
                     <div class="col-sm-12">
                       <!-- text input -->
                       <div class="form-group">
                         <label class="col-form-label" for="inputSuccess"><i class="fas fa-check"></i> Subject Name</label>
-                        <input type="text" class="form-control is-valid" id="inputSuccess" placeholder="Enter ...">
+                        <input type="text" class="form-control is-valid" id="inputSuccess" placeholder="Enter ..." name="subject_name" required>
+                      </div>
+
+                     <!--  <div class="form-group">
+                        <label class="col-form-label" for="inputSuccess"><i class="fas fa-check"></i> Subject Name</label>
+                        <input type="text" class="form-control is-valid" id="inputSuccess" placeholder="Enter ..." required>
                       </div>
 
                       <div class="form-group">
                         <label class="col-form-label" for="inputSuccess"><i class="fas fa-check"></i> Subject Name</label>
-                        <input type="text" class="form-control is-valid" id="inputSuccess" placeholder="Enter ...">
-                      </div>
-
-                      <div class="form-group">
-                        <label class="col-form-label" for="inputSuccess"><i class="fas fa-check"></i> Subject Name</label>
-                        <input type="text" class="form-control is-valid" id="inputSuccess" placeholder="Enter ...">
-                      </div>
+                        <input type="text" class="form-control is-valid" id="inputSuccess" placeholder="Enter ..." required>
+                      </div> -->
 
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-12">
                       <!-- textarea -->
-                      <div class="form-group">
+                     <!--  <div class="form-group">
                         <label>Description</label>
                         <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                   <div class="form-group">
@@ -84,6 +85,10 @@
                                   <td>{{ $subject->created_at }}</td>
                                   <td>{{ $subject->updated_at }}</td>
                                   <!-- <td>Delete</td> -->
+                                  <td>
+                                    <a href="/subject/{{ $subject->id }}" class="btn btn-block btn-info btn-xs">Delete</a>
+                                  </a>
+                                </td>
                                 </tr>
                               </tbody>
                               @endforeach

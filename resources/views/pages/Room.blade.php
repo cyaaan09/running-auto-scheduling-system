@@ -1,6 +1,16 @@
 @extends('index')
 
 @section('content')
+<style type="text/css">
+.my-custom-scrollbar {
+position: relative;
+height: 500px;
+overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
+</style>
 <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -36,9 +46,9 @@
                       <div class="form-group">
                         <label>Types of Rooms</label>
                         <select class="custom-select">
-                          <option>Select</option>
-                          <option>LAB</option>
-                          <option>LEC</option>
+                          @foreach ($types as $type)
+                          <option>{{$type->name}}</option>
+                          @endforeach
                         </select>
                       </div>
 
@@ -66,28 +76,35 @@
                             <h3 class="card-title">List</h3>
                           </div>
                           <!-- /.card-header -->
-                          <div class="card-body p-0">
-                            <table class="table">
-                              <thead>
-                                <tr>
-                                  <th>ID #</th>
-                                  <th>Building</th>
-                                  <th>Rooms</th>
-                                  <th>Types of Room</th>
-                                  <th>Capacity</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>19-202</td>
-                                  <td>John Rosales</td>
-                                  <td>IT</td>
-                                  <td>Annex 101 </td>
-                                  <td>Lab</td>
-                                  <td>Delete</td>
-                                </tr>
-                              </tbody>
-                            </table>
+                          <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                            <div class="card-body p-0">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>ID #</th>
+                                    <th>TYPE</th>
+                                    <th>Seating Capacity</th>
+                                    <th>Created_at</th>
+                                    <th>Updated_at</th>
+                                  </tr>
+                                </thead>
+                                @foreach ($rooms as $room)
+                                  <tbody>
+                                  <tr>
+                                    <td>{{$room->room_id}}</td>
+                                    <td>{{$room->type_name}}</td>
+                                    <td>{{$room->capacity}}</td>
+                                    <td>{{$room->created_at}}</td>
+                                    <td>{{$room->updated_at}}</td>
+                                    <td>
+                                        <a href="" class="btn btn-block btn-info btn-xs">Delete</a>
+                                        </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                                @endforeach
+                              </table>
+                            </div>
                           </div>
                           <!-- /.card-body -->
                     </div>

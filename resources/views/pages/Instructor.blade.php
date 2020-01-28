@@ -27,7 +27,7 @@ display: block;
             <div class="col-sm-12">
                 <div class="card">
                       <div class="card-header">
-                        <h3 class="card-title">Simple Full Width Table</h3>
+                        <h3 class="card-title">Instructors Table</h3>
                         <div class="col-sm-12">
                           <div class="float-right" >
                              <a href="#" class="btn btn-block btn-info btn-md" data-toggle="modal" data-target="#exampleModalCenter">Add Instructor</a>
@@ -38,7 +38,7 @@ display: block;
                       <div class="table-wrapper-scroll-y my-custom-scrollbar">
                         <div class="card-body p-0">
                           <table class="table">
-                            <thead>
+                            <thead class="position-relative">
                               <tr>
                                 <th>ID #</th>
                                 <th>Name</th>
@@ -56,6 +56,9 @@ display: block;
                                 <td>{{ $instructor->updated_at }}</td>
                                 <td>
                                     <a href="#" class="btn btn-block btn-info btn-xs" data-toggle="modal" data-target="#Details">Details</a>
+                                  </a>
+                                <td>
+                                    <a href="/instructor/{{ $instructor->id }}" class="btn btn-block btn-info btn-xs">Delete</a>
                                   </a>
                                 </td>
                               </tr>

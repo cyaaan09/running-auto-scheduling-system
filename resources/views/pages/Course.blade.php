@@ -20,18 +20,19 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-                <form role="form">
+                <form role="form" action="/course" method="POST">
+                  {{csrf_field()}}
                   <div class="row">
                     <div class="col-sm-12">
                       <!-- text input -->
                       <div class="form-group">
                         <label>Course Name</label>
-                        <input type="text" class="form-control" placeholder="Enter ...">
+                        <input type="text" class="form-control" placeholder="Enter ..." name="course_name" required>
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
-                    <button class="btn btn-block btn-info btn-md">Submit</button>
+                    <button class="btn btn-block btn-info btn-md" >Submit</button>
                   </div>
                 </form>
               </div>
@@ -67,6 +68,10 @@
                                     <td>{{ $course->name }}</td>
                                     <td>{{ $course->created_at }}</td>
                                     <td>{{ $course->updated_at }}</td>
+                                    <td>
+                                    <a href="/course/{{ $course->id }}" class="btn btn-block btn-info btn-xs">Delete</a>
+                                  </a>
+                                </td>
                                   </tr>
                                 </tbody>
                                 @endforeach  

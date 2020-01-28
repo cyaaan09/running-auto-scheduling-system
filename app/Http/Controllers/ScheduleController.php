@@ -21,16 +21,21 @@ class ScheduleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function get()
     {
         return view('pages.Schedule');
     }
-    public function add()
+    public function new()
     {
         return view('pages.Schedule');
     }
 
-    public function delete()
+    public function show()
+    {
+        return view('pages.Schedule');
+    }
+
+    public function post()
     {
         return view('pages.Schedule');
     }
@@ -40,7 +45,12 @@ class ScheduleController extends Controller
         return view('pages.Schedule');
     }
 
-    public function update()
+    public function put()
+    {
+        return view('pages.Schedule');
+    }
+
+    public function delete()
     {
         return view('pages.Schedule');
     }

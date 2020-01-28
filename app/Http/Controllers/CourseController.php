@@ -22,20 +22,28 @@ class CourseController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function get()
     {
         $courses = Course::all();
         return view('pages.Course')->with("courses", $courses);
     }
 
-    public function add()
+    public function new()
     {
         return view('pages.Course');
     }
 
-    public function delete()
+    public function show()
     {
         return view('pages.Course');
+    }
+
+    public function post(Request $request)
+    {
+        $course = new Course;
+        $course->name = $request->input('course_name');
+        $course->save();
+        return redirect('/course');
     }
 
     public function edit()
@@ -43,8 +51,14 @@ class CourseController extends Controller
         return view('pages.Course');
     }
 
-    public function update()
+    public function put()
     {
-        return view('pages.Course');
+        return view('pages.Instructor');
+    }
+
+     public function delete($id)
+    {
+        Course::where('id',$id)->delete();
+        return redirect('/course');
     }
 }

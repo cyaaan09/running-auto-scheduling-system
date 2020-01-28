@@ -19,15 +19,26 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/instructor', 'InstructorController@index')->name('instructor');
-Route::POST('/instructor', 'InstructorController@add')->name('instructor.add');
+Route::get('/instructor', 'InstructorController@get')->name('instructor');
+Route::POST('/instructor', 'InstructorController@post')->name('instructor.post');
+Route::get('/instructor/{id}', 'InstructorController@delete')->name('instructor.delete');
 
-Route::get('/course', 'CourseController@index')->name('course');
 
-Route::get('/subject', 'SubjectController@index')->name('subject');
+Route::get('/course', 'CourseController@get')->name('course');
+Route::POST('/course', 'CourseController@post')->name('course.post');
+Route::get('/course/{id}', 'CourseController@delete')->name('course.delete');
 
-Route::get('/schedule', 'ScheduleController@index')->name('schedule');
 
-Route::get('/room', 'RoomController@index')->name('room');
+Route::get('/subject', 'SubjectController@get')->name('subject');
+Route::POST('/subject', 'SubjectController@post')->name('subject.post');
+Route::get('/subject/{id}', 'SubjectController@delete')->name('subject.delete');
 
-Route::get('/meetingtime', 'MeetingController@index')->name('meeting');
+
+Route::get('/schedule', 'ScheduleController@get')->name('schedule');
+
+Route::get('/room', 'RoomController@get')->name('room');
+
+
+Route::get('/meetingtime', 'MeetingController@get')->name('meeting');
+Route::POST('/meetingtime', 'MeetingController@post')->name('meeting.post');
+Route::get('/meetingtime/{id}', 'MeetingController@delete')->name('meetingtime.delete');

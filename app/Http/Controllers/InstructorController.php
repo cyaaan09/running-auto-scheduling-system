@@ -22,12 +22,24 @@ class InstructorController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function get()
     {
         $instructors = Instructor::all();
         return view('pages.instructor')->with("instructors", $instructors);
     }
-    public function add(Request $request)
+
+    
+    public function new()
+    {
+        return view('pages.Instructor');
+    }
+
+    public function show()
+    {
+        return view('pages.Instructor');
+    }
+
+    public function post(Request $request)
     {
         $instructor = new Instructor;
         $instructor->name = $request->input('instructor_name');
@@ -35,18 +47,20 @@ class InstructorController extends Controller
         return redirect('/instructor');
     }
 
-    public function delete()
-    {
-        return view('pages.Instructor');
-    }
-
     public function edit()
     {
         return view('pages.Instructor');
     }
 
-    public function update()
+    public function put()
     {
         return view('pages.Instructor');
     }
+
+     public function delete($id)
+    {
+        Instructor::where('id',$id)->delete();
+        return redirect('/instructor');
+    }
+
 }

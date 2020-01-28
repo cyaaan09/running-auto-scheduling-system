@@ -13,7 +13,7 @@
         <form action="/instructor" method="POST">
           {{csrf_field()}}
             <label for="recipient-name" class="col-form-label">Name:</label>
-            <input type="text" class="form-control" id="recipient-name" name="instructor_name">
+            <input type="text" class="form-control" id="recipient-name" name="instructor_name" required>
             <!-- <label for="recipient-name" class="col-form-label">Rank:</label>
             <input type="text" class="form-control" id="recipient-name">
             <label for="recipient-name" class="col-form-label">Expertise:</label>
@@ -55,7 +55,7 @@
                               <div class="btn btn-mdb-color btn-rounded float-left">
                               </div>
                             </div>
-                            <button type="button" class="btn btn-primary">UPLOAD</button>
+                            <button type="button" class="btn btn-info">UPLOAD</button>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -73,7 +73,7 @@
         </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">EDIT</button>
+        <button type="button" class="btn btn-info">EDIT</button>
       </div>
     </div>
   </div>
