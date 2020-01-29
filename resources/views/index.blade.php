@@ -57,13 +57,27 @@
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="{{ url('instructor') }}" class="nav-link">
-              <i class="nav-icon fas fa-user"></i>
-              <p>
-                Instructors
-              </p>
-              <i class="right fas fa-angle-left"></i>
-            </a>
+              <a href="" class="nav-link">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  Instructor
+                  <i class="right fa fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                   <a href="{{ url('instructor') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Instructors</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ url('subject_intructor') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Subjects Instructors</p>
+                  </a>
+                </li>
+              </ul>
           </li>
           <li class="nav-item">
             <a href="{{ url('course') }}" class="nav-link">
