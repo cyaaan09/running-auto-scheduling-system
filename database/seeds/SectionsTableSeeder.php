@@ -15,6 +15,7 @@ class SectionsTableSeeder extends Seeder
         DB::table('sections')->insert([
 
         	[
+                'course_id' => 1,
         		'name' => 'BSIT - Section 1',
         		'max_num_of_students' => '30',
                 'created_at' => \Carbon\Carbon::now(),
@@ -22,6 +23,7 @@ class SectionsTableSeeder extends Seeder
         	],
 
         	[
+                'course_id' => 1,
         		'name' => 'BSIT - Section 2',
         		'max_num_of_students' => '30',
                 'created_at' => \Carbon\Carbon::now(),

@@ -15,6 +15,10 @@ class CreateSectionsTable extends Migration
     {
         Schema::create('sections', function (Blueprint $table) {
             $table->increments('id');
+
+            $table->integer('course_id')->unsigned();
+            $table->foreign('course_id')->references('id')->on('courses');
+            
             $table->string('name');
             $table->integer('max_num_of_students');
             $table->timestamps();
