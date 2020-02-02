@@ -83,17 +83,31 @@
               </ul>
           </li>
 
+          <li class="nav-item has-treeview">
+              <a href="" class="nav-link">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  Courses
+                  <i class="right fa fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
 
-          <li class="nav-item">
-            <a href="{{ url('course') }}" class="nav-link">
-             <i class="nav-icon fas fa-edit"></i>
-              <p>
-                Courses
-              </p>
-              <i class="right fas fa-angle-left"></i>
-            </a>
+                <li class="nav-item">
+                   <a href="{{ url('course') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Courses</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="{{ url('section') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Section</p>
+                  </a>
+                </li>
+              </ul>
           </li>
-
 
           <li class="nav-item has-treeview">
             <a href="" class="nav-link">
@@ -134,14 +148,30 @@
               <i class="right fas fa-angle-left"></i>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="{{ url('room') }}" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Rooms
-              </p>
-              <i class="right fas fa-angle-left"></i>
-            </a>
+          <li class="nav-item has-treeview">
+              <a href="" class="nav-link">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  Rooms
+                  <i class="right fa fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+
+                <li class="nav-item">
+                   <a href="{{ url('room') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Add Room</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="{{ url('types') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Types of room</p>
+                  </a>
+                </li>
+              </ul>
           </li>
           <li class="nav-item">
             <a href="{{ url('meetingtime') }}" class="nav-link">
