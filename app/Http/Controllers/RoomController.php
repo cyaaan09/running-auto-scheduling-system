@@ -33,6 +33,7 @@ class RoomController extends Controller
         ->get();
         // dd($rooms);
         $types = Type::all();
+        // dd($types);
         // return view('pages.room')->with(['rooms', $rooms, 'types', $types]);
         return view('pages.room', compact(['rooms', 'types']));
     }
@@ -47,9 +48,13 @@ class RoomController extends Controller
         return view('pages.Room');
     }
 
-    public function post()
+    public function post(Request $request)
     {
-        return view('pages.Room');
+        $rooms = new Room;
+        $rooms->type_id = $request->input('room_type');
+        $rooms->seating_capacity = $request->input('seating_capacity');
+        $rooms->save();
+        return redirect('/room');
     }
 
     public function edit()

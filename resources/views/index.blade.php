@@ -56,6 +56,7 @@
               <i class="right fas fa-angle-left"></i>
             </a>
           </li>
+
           <li class="nav-item has-treeview">
               <a href="" class="nav-link">
                 <i class="nav-icon fas fa-user"></i>
@@ -65,20 +66,24 @@
                 </p>
               </a>
               <ul class="nav nav-treeview">
+
                 <li class="nav-item">
                    <a href="{{ url('instructor') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Instructors</p>
                   </a>
                 </li>
+
                 <li class="nav-item">
-                  <a href="{{ url('subject_intructor') }}" class="nav-link">
+                  <a href="{{ url('instructor/haha') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Subjects Instructors</p>
                   </a>
                 </li>
               </ul>
           </li>
+
+
           <li class="nav-item">
             <a href="{{ url('course') }}" class="nav-link">
              <i class="nav-icon fas fa-edit"></i>
@@ -88,15 +93,38 @@
               <i class="right fas fa-angle-left"></i>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="{{ url('subject') }}" class="nav-link">
+
+
+          <li class="nav-item has-treeview">
+            <a href="" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Subjects
+                Subject
+                <i class="right fas fa-angle-left"></i>
               </p>
-              <i class="right fas fa-angle-left"></i>
             </a>
+            <ul class="nav nav-treeview">
+              
+               <li class="nav-item">
+                   <a href="{{ url('subject') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Subject</p>
+                  </a>
+                </li>
+
+                 <li class="nav-item">
+                   <a href="{{ url('subject') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Subject Detail</p>
+                  </a>
+                </li>
+
+
+            </ul>
           </li>
+
+
+
           <li class="nav-item">
             <a href="{{ url('schedule') }}" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
@@ -156,8 +184,8 @@
       @include('messages.errors') -->
 
       @yield('content')
+      
 
-      @include('modal.index')
 
     </section>
     <!-- /.content -->

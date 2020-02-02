@@ -37,8 +37,13 @@ Route::get('/subject/{id}', 'SubjectController@delete')->name('subject.delete');
 Route::get('/schedule', 'ScheduleController@get')->name('schedule');
 
 Route::get('/room', 'RoomController@get')->name('room');
+Route::POST('/room', 'RoomController@post')->name('room.post');
 
 
 Route::get('/meetingtime', 'MeetingController@get')->name('meeting');
 Route::POST('/meetingtime', 'MeetingController@post')->name('meeting.post');
 Route::get('/meetingtime/{id}', 'MeetingController@delete')->name('meetingtime.delete');
+
+
+Route::get('/instructor/haha', 'InstructorSubjectController@get')->name('instructorsubject');
+Route::POST('/instructorsubject', 'InstructorSubjectController@post')->name('instructorsubject.post');

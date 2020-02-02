@@ -19,7 +19,10 @@ class CreateSubjectDetailsTable extends Migration
             $table->integer('subject_id')->unsigned();
             $table->foreign('subject_id')->references('id')->on('subjects');
 
-            $table->string('type_id');
+            $table->integer('type_id')->unsigned();
+            $table->foreign('type_id')->references('id')->on('types');
+
+            // $table->string('type_id');
             $table->float('duration');
             $table->timestamps();
         });

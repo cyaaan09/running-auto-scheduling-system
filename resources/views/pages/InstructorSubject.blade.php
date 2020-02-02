@@ -1,7 +1,7 @@
 @extends('index')
 
 @section('content')
-@include('modal.index')
+@include('modal.instructorsubjectmodal')
 <style type="text/css">
 .my-custom-scrollbar {
 position: relative;
@@ -17,7 +17,7 @@ display: block;
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>INSTRUCTORS</h1>
+            <h1>INSTRUCTOR SUBJECTS</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -28,10 +28,10 @@ display: block;
             <div class="col-sm-12">
                 <div class="card">
                       <div class="card-header">
-                        <h3 class="card-title">Instructors Table</h3>
+                        <h3 class="card-title">Instructors Subjects Table</h3>
                         <div class="col-sm-12">
                           <div class="float-right" >
-                             <a href="#" class="btn btn-block btn-info btn-md" data-toggle="modal" data-target="#exampleModalCenter">Add Instructor</a>
+                             <a href="#" class="btn btn-block btn-info btn-md" data-toggle="modal" data-target="#instructor_subject">Add Data</a>
                           </div>
                         </div>
                       </div>
@@ -42,26 +42,27 @@ display: block;
                             <thead class="position-relative">
                               <tr>
                                 <th>ID #</th>
-                                <th>Name</th>
-                                <th>created_at</th>
-                                <th>updated_at</th>
+                                <th>Instructor</th>
+                                <th>Course</th>
+                                <th>Section</th>
+                                <th>Subject Details</th>
                               </tr>
                             </thead>
-                             @foreach($instructors as $instructor)
+                             @foreach($InstructorSubjects as $InstructorSubject)
                             <tbody>
                               <tr>
-                               
-                                <td>{{ $instructor->id }}</td>
-                                <td>{{ $instructor->name }}</td>
-                                <td>{{ $instructor->created_at }}</td>
-                                <td>{{ $instructor->updated_at }}</td>
-                                <td>
+                                
+                                <td>{{ $InstructorSubject->id }}</td>
+                                <td>{{ $InstructorSubject->instructor_name }}</td>
+                                <td>{{ $InstructorSubject->course_name }}</td>
+                                <td>{{ $InstructorSubject->section_name }}</td>
+                                <td>{{ $InstructorSubject->sub_name }} - {{ $InstructorSubject->type_name }}</td>
+                                <!-- <td>
                                     <a href="#" class="btn btn-block btn-info btn-xs" data-toggle="modal" data-target="#Details">Details</a>
-                                  </a>
-                                <td>
-                                    <a href="/instructor/{{ $instructor->id }}" class="btn btn-block btn-info btn-xs">Delete</a>
-                                  </a>
-                                </td>
+                                  </td> -->
+                                <!-- <td>
+                                    <a href="/instructor/{{ $InstructorSubject->id }}" class="btn btn-block btn-info btn-xs">Delete</a>
+                                </td> -->
                               </tr>
                             </tbody>
                             @endforeach
