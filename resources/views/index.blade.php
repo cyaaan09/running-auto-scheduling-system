@@ -75,7 +75,7 @@
                 </li>
 
                 <li class="nav-item">
-                  <a href="{{ url('instructor/haha') }}" class="nav-link">
+                  <a href="{{ url('instructorsubject') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Subjects Instructors</p>
                   </a>
@@ -127,7 +127,7 @@
                 </li>
 
                  <li class="nav-item">
-                   <a href="{{ url('subject') }}" class="nav-link">
+                   <a href="{{ url('subjectdetail') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Subject Detail</p>
                   </a>

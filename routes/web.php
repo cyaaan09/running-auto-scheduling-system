@@ -48,8 +48,13 @@ Route::get('/meetingtime/{id}', 'MeetingController@delete')->name('meetingtime.d
 Route::get('/instructorsubject', 'InstructorSubjectController@get')->name('instructorsubject');
 Route::POST('/instructorsubject', 'InstructorSubjectController@post')->name('instructorsubject.post');
 
+<<<<<<< HEAD
 Route::get('/section', 'SectionController@get')->name('sections');
 Route::POST('/section_add', 'SectionController@post')->name('sections.post');
 
 Route::get('/types', 'TypeController@get')->name('types');
 Route::POST('/types_add', 'TypeController@post')->name('types.post');
+=======
+Route::get('/subjectdetail', 'SubjectDetailController@get')->name('subjectdetail');
+Route::POST('/subjectdetail', 'SubjectDetailController@post')->name('subjectdetail.post');
+>>>>>>> 449def348f9fa11f26e5591ecbe5389baa4f7454
