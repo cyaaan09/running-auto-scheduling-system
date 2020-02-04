@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Room extends Model
 {
-    //
+    public function room_type()
+    {
+        return $this->belongsTo('App\Type', 'type_id');
+    }
 }
