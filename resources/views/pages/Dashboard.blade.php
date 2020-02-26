@@ -53,6 +53,10 @@
            </div>
          </div>
       </div>
+      <form id="generate" method="post" action="/schedule/post">
+        {{ csrf_field() }}
+        <input type="hidden" name="generate" value="1">
+      </form>
     </div>
     <br><br>
 
@@ -60,8 +64,31 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
+    $("#generate").submit();
+  });
+
+
+
+  $("#generate").on("submit", function(){
+    var form = $(this);
     $('#loading').attr('hidden', false);
     $('#generate').attr('hidden', true);
+    $.ajax({
+        url: '/schedule/post',
+        type: 'post',
+        data: form.serialize(),
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        dataType: 'json',
+        success: function (data) {
+          if(data.status) {
+            $("#loading").attr('hidden', true);
+            // success message here before we redirect
+            window.location.replace(data.redirect);
+          }
+        }
+    });
   });
 });
 </script>
