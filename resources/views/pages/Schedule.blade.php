@@ -24,9 +24,10 @@
                           <thead>
                             <tr>
                               <th>ID #</th>
+                              <th>(Section, capacity)</th>
                               <th>Instructors</th>
                               <th>Subjects</th>
-                              <th>Rooms</th>
+                              <th>Rooms (Type, capacity)</th>
                               <th>Time</th>
                               <th>Day</th>
                             </tr>
@@ -35,11 +36,12 @@
                             @foreach($schedules as $schedule)
                             <tr>
                               <td>{{ $schedule->id }}</td>
+                              <td>({{ $schedule->section->name }}, {{ $schedule->section->max_num_of_students  }})</td>
                               <td>{{ $schedule->instructor->name }}</td>
                               <td>{{ $schedule->subject->name}}</td>
                               <?php
                               if($schedule->room == null) {
-                                $room = "( " . $schedule->room_type->name . " )";
+                                $room = "( " . $schedule->room_type->name . ", ? )";
                               }
                               else {
                                 $room = $schedule->room->id . " ( " . $schedule->room->seating_capacity . ", " . $schedule->room_type->name . " )";
