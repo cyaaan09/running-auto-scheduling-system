@@ -66,7 +66,9 @@ class ScheduleController extends Controller
         $course_section = json_encode(CourseSection::all());
 
         // if these data are ready for genetic algo:
-        $process = new Process(['python', storage_path("app/python/genetic_algorithm.py"), $room, $types, 
+        $process = new Process(['python', storage_path("app/python/genetic_algorithm.py"), 
+            $room, 
+            $types, 
             $meeting_times, 
             $instructors, 
             $courses, 

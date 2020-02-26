@@ -38,6 +38,7 @@
       </div><br>
       <h3 class="text-center" style="color: #007bff">53 %</h3>
     </div>
+    @if($schedules->isEmpty())
     <div id="generate">
       <h5 class="text-center">Click Here</h5>
       <p class="text-center">
@@ -58,6 +59,17 @@
         <input type="hidden" name="generate" value="1">
       </form>
     </div>
+    @else
+    <div id="generate">
+      <div class="d-flex justify-content-center">
+         <div class="row">
+           <div class="col-sm-12">
+              <a href="/schedule" type="button" class="btn btn-block btn-outline-warning btn-lg btn-circle btn-xl"><span>Go to Schedules</span></a>
+           </div>
+         </div>
+      </div>
+    </div>    
+    @endif
     <br><br>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
