@@ -27,7 +27,7 @@
                               <th>(Section, capacity)</th>
                               <th>Instructors</th>
                               <th>Subjects</th>
-                              <th>Rooms (Type, capacity)</th>
+                              <th>Rooms (Capacity,Type)</th>
                               <th>Time</th>
                               <th>Day</th>
                             </tr>
@@ -62,7 +62,7 @@
                   <div class="col-sm-2">
                     <form id="update_schedule" method="post" action="/schedule/update">
                       {{ csrf_field() }}
-                      <input type="hidden" name="day" value="{{ $day }}">
+                      <input type="" name="day" value="{{ $day }}">
                       <button type="submit" class="btn btn-block btn-info btn-sm">Bellman</button>
                     </form>
                   </div>

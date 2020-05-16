@@ -36,7 +36,7 @@
           <i class="fa fa-spinner fa-pulse fa-3x fa-fw margin-bottom"></i>
           <span class="sr-only"  style="color: #ffc107">Loading...</span>
       </div><br>
-      <h3 class="text-center" style="color: #007bff">53 %</h3>
+      <h3 class="text-center" style="color: #007bff">PLEASE WAIT....</h3>
     </div>
     @if($schedules->isEmpty())
     <div id="generate">

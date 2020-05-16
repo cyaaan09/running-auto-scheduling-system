@@ -14,43 +14,37 @@ class SubjectsTableSeeder extends Seeder
     {
         DB::table('subjects')->insert([
         	[
-        		'name' => 'Math 101',
+        		'name' => 'MATH 1.7',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Science 101',
+        		'name' => 'FIL 1',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Rizal',
+        		'name' => 'MATH 2.1',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Philosohy',
+        		'name' => 'IT 1',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Discrete Math',
+        		'name' => 'ACCOUNTING 1',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Algorithm 101',
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
-
-        	[
-        		'name' => 'Microeconomics',
+        		'name' => 'ENGLISH 1',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
@@ -61,17 +55,13 @@ class SubjectsTableSeeder extends Seeder
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
-        	[
-        		'name' => 'Programming 101',
+            [
+                'name' => 'NSTP 1',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
-        	],
+            ],
 
-        	[
-        		'name' => 'Physics',
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
+        	
         	
         ]);
 

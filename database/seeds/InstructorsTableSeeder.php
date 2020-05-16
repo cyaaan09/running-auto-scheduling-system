@@ -15,127 +15,127 @@ class InstructorsTableSeeder extends Seeder
     {
         DB::table('instructors')->insert([
         	[
-        		'name' => 'Dr Christian Matangcas',
+        		'name' => 'Dr Junrie B. Matias',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Dr Carl Yap',
+        		'name' => 'Dr Jaymer M. Jayoma',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Dr John Rosales',
+        		'name' => 'Dr Mark Phil B. Pacot',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Dr Jaymar Bajala',
+        		'name' => 'MA. Besa Joy M. Urtuyo',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Dr Jessa Rosales',
+        		'name' => 'Jesterlyn Q. Timosan',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Dr Pamela Rosales',
+        		'name' => 'Roland P. Abao',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Mr Ghost Saruman',
+        		'name' => 'Engr. Rudolph Joshua M. Candare',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Miss Shark Bait',
+        		'name' => 'James Earl D. Cubillas',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Miss Pennylane Samgyupsal',
+        		'name' => 'Jennifer E. Sabugaa',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now(),
         	],
 
         	[
-        		'name' => 'Miss Sylvia',
+        		'name' => 'Gleen A. Dalaorao',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Mr Latortuga Shellby',
+        		'name' => 'Vicente A. Pitogo',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Mr Steve',
+        		'name' => 'Jane Francis P. Jaictin',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Mr Stark',
+        		'name' => 'Takeyasu V. Nakazato',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Mrs Mika Tiu',
+        		'name' => 'Jenie L. Plender',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Ms Adi',
+        		'name' => 'john Carlo F. Camba',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Mr Luke',
+        		'name' => 'Rejeanfe E. Gallito',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Mr Digong',
+        		'name' => 'Elbert S. Moyon',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Mr Pipoy',
+        		'name' => 'Melbert R. Bonotan',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Mrs Mikay',
+        		'name' => 'Dr. Rolyn C. Daguil',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Mr Kaspersking Tunay',
+        		'name' => 'Dr. James V. Presbitero',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
-        		'name' => 'Mr Zemzem',
+        		'name' => 'Cherry I. Tabada',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],

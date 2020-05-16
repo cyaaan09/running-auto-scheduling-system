@@ -16,7 +16,7 @@ class Subject_DetailsTableSeeder extends Seeder
         	[
         		'id' 		=> 1,
         		'subject_id' => 1,
-        		'type_id' => 2,
+        		'type_id' => 3,
         		'duration' => 1.5,
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
@@ -24,27 +24,27 @@ class Subject_DetailsTableSeeder extends Seeder
 
         	[
         		'id' 		=> 3,
-        		'subject_id' => 1,
+        		'subject_id' => 2,
         		'type_id' => 3,
-        		'duration' => 1,
+        		'duration' => 1.5,
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
         		'id' 		=> 4,
-        		'subject_id' => 2,
+        		'subject_id' => 3,
         		'type_id' => 3,
-        		'duration' => 1,
+        		'duration' => 1.5,
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
         	[
         		'id' 		=> 6,
-        		'subject_id' => 3,
+        		'subject_id' => 4,
         		'type_id' => 3,
-        		'duration' => 1,
+        		'duration' => 1.5,
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
@@ -52,8 +52,8 @@ class Subject_DetailsTableSeeder extends Seeder
         	[
         		'id' 		=> 8,
         		'subject_id' => 4,
-        		'type_id' => 3,
-        		'duration' => 1,
+        		'type_id' => 2,
+        		'duration' => 2,
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
@@ -62,7 +62,7 @@ class Subject_DetailsTableSeeder extends Seeder
         		'id' 		=> 10,
         		'subject_id' => 5,
         		'type_id' => 3,
-        		'duration' => 1,
+        		'duration' => 1.5,
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
@@ -71,7 +71,7 @@ class Subject_DetailsTableSeeder extends Seeder
         		'id' 		=> 11,
         		'subject_id' => 6,
         		'type_id' => 3,
-        		'duration' => 1,
+        		'duration' => 1.5,
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
@@ -79,74 +79,23 @@ class Subject_DetailsTableSeeder extends Seeder
         	[
         		'id' 		=> 12,
         		'subject_id' => 7,
-        		'type_id' => 3,
-        		'duration' => 1,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
-
-        	[
-        		'id' 		=> 13,
-        		'subject_id' => 8,
-        		'type_id' => 3,
-        		'duration' => 1,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
-
-        	[
-        		'id' 		=> 14,
-        		'subject_id' => 8,
         		'type_id' => 4,
         		'duration' => 2,
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
-        	[
-        		'id' 		=> 15,
-        		'subject_id' => 9,
-        		'type_id' => 3,
-        		'duration' => 1,
+            [
+                'id'        => 13,
+                'subject_id' => 8,
+                'type_id' => 4,
+                'duration' => 3,
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
-        	],
+            ],
 
-        	[
-        		'id' 		=> 16,
-        		'subject_id' => 9,
-        		'type_id' => 2,
-        		'duration' => 2,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
 
-        	[
-        		'id' 		=> 17,
-        		'subject_id' => 10,
-        		'type_id' => 3,
-        		'duration' => 1,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
-
-        	[
-        		'id' 		=> 18,
-        		'subject_id' => 10,
-        		'type_id' => 3,
-        		'duration' => 1,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
-
-        	[
-        		'id' 		=> 19,
-        		'subject_id' => 6,
-        		'type_id' => 3,
-        		'duration' => 1,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
+        	
         	
         ]);
 

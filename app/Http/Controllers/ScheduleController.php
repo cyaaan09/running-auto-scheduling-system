@@ -64,7 +64,7 @@ class ScheduleController extends Controller
         $meeting_times = json_encode(MeetingTime::all());
         $room_schedules = RoomSchedule::with('schedule')->get();
         $day = json_encode(['day' => $request->input('day')]);
-
+        // dd($room_schedules);
         $r_s = [];
         foreach($room_schedules as $room_schedule) {
             $r_s[] = [
@@ -73,6 +73,7 @@ class ScheduleController extends Controller
             ];
         }
         $r_s = json_encode($r_s);
+        // dd($r_s);
 
         // if these data are ready for genetic algo:
         $process = new Process(['python', storage_path("app/python/bf.py"), 
@@ -86,7 +87,7 @@ class ScheduleController extends Controller
         ]);
         $process->setTimeout(0);
         $process->run();
-
+        // dd($process);
         // executes after the command finishes
         if (!$process->isSuccessful()) {
             throw new ProcessFailedException($process);
@@ -103,6 +104,7 @@ class ScheduleController extends Controller
             $room_meeting_time->schedule_id = $t->schedule_id;
             $room_meeting_time->save();
             $schedule->save();
+
         }
 
         return redirect()->back();

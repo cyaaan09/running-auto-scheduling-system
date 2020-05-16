@@ -20,8 +20,8 @@ class RoomsTableSeeder extends Seeder
                 'updated_at' => \Carbon\Carbon::now()
             ],
         	[
-        		'seating_capacity' => 25,
-        		'type_id' => 2,
+        		'seating_capacity' => 40,
+        		'type_id' => 3,
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
@@ -35,7 +35,7 @@ class RoomsTableSeeder extends Seeder
 
         	[
         		'seating_capacity' => 35,
-        		'type_id' => 3,
+        		'type_id' => 2,
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
         	],
@@ -56,34 +56,6 @@ class RoomsTableSeeder extends Seeder
 
         	[
         		'seating_capacity' => 50,
-        		'type_id' => 4,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
-
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 2,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
-
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 3,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
-
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 2,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
-
-        	[
-        		'seating_capacity' => 50,
         		'type_id' => 3,
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
@@ -117,103 +89,131 @@ class RoomsTableSeeder extends Seeder
                 'updated_at' => \Carbon\Carbon::now()
         	],
 
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 3,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 3,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
 
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 3,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 3,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
 
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 3,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 3,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
 
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 3,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 3,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
 
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 3,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 3,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
 
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 2,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 3,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
 
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 2,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 3,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
 
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 2,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 3,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
 
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 2,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 3,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
 
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 3,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 2,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
 
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 3,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 2,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
 
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 3,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 2,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
 
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 2,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 2,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
 
-        	[
-        		'seating_capacity' => 50,
-        		'type_id' => 2,
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-        	],
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 3,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
+
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 3,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
+
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 3,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
+
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 2,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
+
+        	// [
+        	// 	'seating_capacity' => 50,
+        	// 	'type_id' => 2,
+         //        'created_at' => \Carbon\Carbon::now(),
+         //        'updated_at' => \Carbon\Carbon::now()
+        	// ],
         ]);
     }
 }
